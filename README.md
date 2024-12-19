@@ -57,7 +57,7 @@ bash scripts/dataset/download_niv.sh
 ```
 
 ### 3.2 Description Features
-You can download the features from [SCHEMA](https://github.com/WenliangGuo/SCHEMA/tree/master/data) ( both `data` and `dataset` dirs)
+You can download the features from [SCHEMA](https://github.com/WenliangGuo/SCHEMA) ( both [data](https://github.com/WenliangGuo/SCHEMA/tree/master/data) and [dataset](https://github.com/WenliangGuo/SCHEMA/tree/master/dataset) dirs)
 
 ### 3.3(Optional) Generate Descriptions
 
