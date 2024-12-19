@@ -1,0 +1,1 @@
+<Video><VideoHere></Video> Describe the task and steps between the  following two video clips concisely. Please provide a json format with keys "Task" and "Actions".

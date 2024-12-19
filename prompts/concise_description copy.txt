@@ -1,0 +1,11 @@
+<Video><VideoHere></Video> Describe the task and steps between the  following two video clips concisely. Please provide a json format with keys "Task" and "Actions".
+<Video><VideoHere></Video> Provide a brief description of the task and steps between the given two video clips. Please provide a json format with keys "Task" and "Actions".
+<Video><VideoHere></Video> Offer a succinct explanation of the task and steps between the two video clips presented. Please provide a json format with keys "Task" and "Actions".
+<Video><VideoHere></Video> Summarize the task and steps between the visual content of the following two video clips. Please provide a json format with keys "Task" and "Actions".
+<Video><VideoHere></Video> Give a short and clear explanation of the task and steps between the subsequent two video clips. Please provide a json format with keys "Task" and "Actions".
+<Video><VideoHere></Video> Share a concise interpretation of the task and steps between the two video clips provided. Please provide a json format with keys "Task" and "Actions".
+<Video><VideoHere></Video> Present a compact description of the task and steps between the two video clips' key features. Please provide a json format with keys "Task" and "Actions".
+<Video><VideoHere></Video> Relay a brief, clear account of the task and steps between the two video clips shown. Please provide a json format with keys "Task" and "Actions".
+<Video><VideoHere></Video> Render a clear and concise summary of the task and steps between the two video clips below. Please provide a json format with keys "Task" and "Actions".
+<Video><VideoHere></Video> Write a terse but informative summary of the task and steps between the following two video clips. Please provide a json format with keys "Task" and "Actions".
+<Video><VideoHere></Video> Create a compact narrative representing of the task and steps between the two video clips presented. Please provide a json format with keys "Task" and "Actions".

@@ -1,0 +1,143 @@
+{
+  "TextEncoders": {
+    "bert": {
+      "name": "bert_base",
+      "pretrained": "bert-base-uncased",
+      "config": "configs/config_bert.json",
+      "d_model": 768,
+      "fusion_layer": 9
+    }
+  },
+  "dataset": "niv",
+  "max_traj_len": 4,
+  "model_name": "niv",
+  "num_layers": 2,
+  "attn_heads": 32,
+  "mlp_ratio": 2,
+  "text_input_dim": 768,
+  "img_input_dim": 512,
+  "embed_dim": 512,
+  "num_action": 48,
+  "num_tasks": 5,
+  "epochs": 500,
+  "batch_size": 256,
+  "dropout": 0.2,
+  "step_size": 40,
+  "M": 2,
+  "aug_range": 0,
+  "no_state_task": true,
+  "root_dir": "dataset/niv",
+  "train_json": "dataset/niv/niv_train.json",
+  "valid_json": "dataset/niv/niv_valid.json",
+  "features_dir": "data/niv_features/processed_data",
+  "eval": false,
+  "saved_path": "checkpoints",
+  "last_epoch": 1,
+  "split": "base",
+  "seed": 42,
+  "uncertain": false,
+  "num_sample": 1500,
+  "stage": "qformer",
+  "num_workers": 6,
+  "stop_key": null,
+  "num_frames": 4,
+  "num_frames_test": 4,
+  "max_txt_l": 32,
+  "pre_text": false,
+  "inputs": {
+    "image_res": 224,
+    "video_input": {
+      "num_frames": 4,
+      "sample_type": "rand",
+      "num_frames_test": 4,
+      "sample_type_test": "middle",
+      "random_aug": false
+    },
+    "max_txt_l": 32,
+    "batch_size": 256,
+    "batch_size_test": 256
+  },
+  "text_enc": "bert",
+  "model": {
+    "model_cls": "PlanLLM_qformer",
+    "text_encoder": {
+      "name": "bert_base",
+      "pretrained": "bert-base-uncased",
+      "config": "configs/config_bert.json",
+      "d_model": 768,
+      "fusion_layer": 9
+    },
+    "vit_add_ln": true,
+    "embed_dim": 768,
+    "temp": 0.07,
+    "qformer_num_query_tokens": 4,
+    "agg_method": "mean",
+    "drop_path_rate": 0.2
+  },
+  "criterion": {
+    "loss_weight": {
+      "vtc": 0.1,
+      "mlm": 0.1,
+      "vtm": 0.1,
+      "mvm": 0.1,
+      "cap": 0.1
+    },
+    "vtm_hard_neg": true,
+    "vtm_cat_text_cls": true
+  },
+  "optimizer": {
+    "opt": "adamW",
+    "lr": 0.0001,
+    "opt_betas": [
+      0.9,
+      0.999
+    ],
+    "weight_decay": 0.02,
+    "max_grad_norm": 0.01,
+    "different_lr": {
+      "enable": true,
+      "modules_lrs": {
+        "state_encoder": 0.0001,
+        "state_decoder": 0.001,
+        "action_decoder": 0.001,
+        "task_decoder": 0.001
+      }
+    }
+  },
+  "scheduler": {
+    "sched": "xx",
+    "epochs": 500,
+    "min_lr_multi": 0.01,
+    "warmup_epochs": 100
+  },
+  "evaluate": false,
+  "deep_fusion": false,
+  "evaluation": {
+    "eval_frame_ensemble": "concat",
+    "eval_x_only": false,
+    "k_test": 128,
+    "eval_offload": true
+  },
+  "fp16": true,
+  "gradient_checkpointing": true,
+  "wandb": {
+    "enable": false,
+    "entity": "user",
+    "project": "planllm"
+  },
+  "dist_url": "env://",
+  "device": "cuda",
+  "mode": "pt",
+  "output_dir": "scripts/planllm_vicuna/",
+  "resume": false,
+  "debug": false,
+  "log_freq": 100,
+  "save_latest": true,
+  "auto_resume": true,
+  "pretrained_path": "",
+  "distributed": true,
+  "rank": 0,
+  "world_size": 1,
+  "gpu": 0,
+  "dist_backend": "nccl"
+}
