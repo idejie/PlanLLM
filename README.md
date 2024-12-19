@@ -56,7 +56,10 @@ bash scripts/dataset/download_coin.sh
 bash scripts/dataset/download_niv.sh
 ```
 
-### 3.2(Optional) Generate Descriptions
+### 3.2 Description Features
+You can download the features from [SCHEMA](https://github.com/WenliangGuo/SCHEMA/tree/master/data) ( both `data` and `dataset` dirs)
+
+### 3.3(Optional) Generate Descriptions
 
 The descriptions of actions and states have been already provided in this repo. The raw descriptions are saved as .json files in the "data" folder. The state and action description features extracted by CLIP language encoder are saved respectively in the "data/state_description_features" and "data/action_description_features" folders.
 
