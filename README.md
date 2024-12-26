@@ -98,10 +98,10 @@ If you want to customize the prompts and generate new descriptions, please follo
 | --------- | ------------- | ----------- |
 | niv(T=3)      | 30.63         |    [BaiduNetdisk](https://pan.baidu.com/s/1SxSNwxqI1WzfO7iJ83Wy6w?pwd=plan)     |
 | niv(T=4)      | 24.81         |     [BaiduNetdisk](https://pan.baidu.com/s/1Wtow-gQP4xKPNEyDeFlWqg?pwd=plan)     |
-| crosstask(T=3) | 40.01         |   [BaiduNetdisk]()  【uploading】        |
-| crosstask(T=4) | 25.61           |   [BaiduNetdisk]()   【uploading】       |
-| coin(T=3)   | 33.22         |    [BaiduNetdisk]()   【uploading】      |
-| coin(T=4)      | 25.13         |  [BaiduNetdisk]()  【uploading】         |
+| crosstask(T=3) | 40.01         |   [BaiduNetdisk](https://pan.baidu.com/s/1JJrHdib02XInq9lURrHOeQ?pwd=plan)          |
+| crosstask(T=4) | 25.61           |   [BaiduNetdisk](https://pan.baidu.com/s/1JJrHdib02XInq9lURrHOeQ?pwd=plan)         |
+| coin(T=3)   | 33.22         |    [BaiduNetdisk](https://pan.baidu.com/s/1vWOgIGBfPb0SMHsvpZxgbg?pwd=plan)       |
+| coin(T=4)      | 25.13         |  [BaiduNetdisk](https://pan.baidu.com/s/1vWOgIGBfPb0SMHsvpZxgbg?pwd=plan)          |
 ### 5.3 Run
 run the training script:
    ```
